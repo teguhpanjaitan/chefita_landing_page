@@ -370,7 +370,7 @@ export default function ChefitaLanding() {
                     </div>
                   </div>
                   <blockquote className="text-gray-700 italic text-lg leading-relaxed">
-                    "{testimonial.quote}"
+                    &quot;{testimonial.quote}&quot;
                   </blockquote>
 
                   {/* Star rating */}
@@ -447,14 +447,14 @@ export default function ChefitaLanding() {
                 className={`group relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl overflow-hidden transition-all duration-700 hover:scale-105 ${plan.popular ? "transform scale-110 bg-white/15" : ""}`}
               >
                 {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                    <span className="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-xl">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 z-20">
+                    <span className="text-white text-xl py-3 font-bold my-1">
                       🔥 Paling Populer
                     </span>
                   </div>
                 )}
 
-                <CardContent className="p-8 space-y-8 relative z-10">
+                <CardContent className="p-8 space-y-8 relative z-10 mt-4">
                   <div className="text-center space-y-4">
                     <div
                       className={`w-16 h-16 bg-gradient-to-br ${plan.color} rounded-2xl flex items-center justify-center mx-auto shadow-2xl`}
