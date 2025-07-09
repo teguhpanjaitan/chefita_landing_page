@@ -541,7 +541,7 @@ export default function ChefitaLanding() {
                 key={index}
                 className="group bg-white/90 backdrop-blur-xl rounded-3xl shadow-xl border-0 transition-all duration-500 hover:shadow-2xl"
               >
-                <CardContent className="p-6">
+                <CardContent className="p-4">
                   <details className="group/details">
                     <summary className="flex justify-between items-center cursor-pointer text-xl font-bold text-gray-900 hover:text-orange-600 transition-colors duration-300">
                       {faq.q}
