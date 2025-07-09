@@ -1,9 +1,14 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import Header from "@/components/header"
+import Footer from "@/components/footer"
 
 export default function ChefitaLanding() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-orange-50 to-amber-50 font-['Poppins',sans-serif] overflow-x-hidden">
+      {/* Header */}
+      <Header />
+
       {/* Animated Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-orange-200/30 to-amber-200/30 rounded-full blur-3xl animate-pulse"></div>
@@ -12,7 +17,7 @@ export default function ChefitaLanding() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative container mx-auto px-4 py-16 lg:py-24">
+      <section className="relative container mx-auto px-4 py-16 lg:py-24 mt-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-10 relative z-10">
@@ -44,13 +49,13 @@ export default function ChefitaLanding() {
                 className="group relative bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-10 py-6 rounded-2xl text-lg font-bold shadow-2xl hover:shadow-orange-500/25 transition-all duration-500 transform hover:scale-105 border-0"
               >
                 <span className="relative z-10 flex items-center gap-3">
-                  📲 Coba Gratis
+                  📲 Coba Gratis via WhatsApp
                   <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div>
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-400 rounded-2xl blur opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
               </Button>
 
-              {/* <Button
+              <Button
                 variant="outline"
                 size="lg"
                 className="group relative bg-white/80 backdrop-blur-sm border-2 border-orange-300 text-orange-600 hover:bg-orange-50 px-10 py-6 rounded-2xl text-lg font-bold transition-all duration-500 transform hover:scale-105 shadow-xl hover:shadow-2xl"
@@ -59,7 +64,7 @@ export default function ChefitaLanding() {
                   🎥 Lihat Demo Chefita
                   <div className="w-0 h-0 border-l-4 border-l-orange-500 border-y-2 border-y-transparent group-hover:animate-pulse"></div>
                 </span>
-              </Button> */}
+              </Button>
             </div>
 
             {/* Trust Indicators */}
@@ -110,7 +115,7 @@ export default function ChefitaLanding() {
       </section>
 
       {/* Benefits Section */}
-      <section className="relative py-20 lg:py-32">
+      <section id="features" className="relative py-20 lg:py-32">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-orange-200/50 shadow-lg mb-8">
@@ -249,7 +254,7 @@ export default function ChefitaLanding() {
       </section>
 
       {/* UI Preview Section */}
-      <section className="relative py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-gray-100">
+      <section id="demo" className="relative py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-gray-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/90 backdrop-blur-sm rounded-full border border-gray-200/50 shadow-xl mb-8">
@@ -314,7 +319,7 @@ export default function ChefitaLanding() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="relative py-20 lg:py-32">
+      <section id="testimonials" className="relative py-20 lg:py-32">
         <div className="absolute inset-0 bg-gradient-to-br from-orange-50/80 to-amber-50/80"></div>
 
         <div className="relative container mx-auto px-4">
@@ -392,7 +397,7 @@ export default function ChefitaLanding() {
       </section>
 
       {/* Pricing Section */}
-      <section className="relative py-20 lg:py-32 bg-gradient-to-br from-slate-900 to-gray-900">
+      <section id="pricing" className="relative py-20 lg:py-32 bg-gradient-to-br from-slate-900 to-gray-900">
         <div
           className="absolute inset-0"
           style={{
@@ -415,7 +420,7 @@ export default function ChefitaLanding() {
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">Pilih paket yang sesuai dengan skala usaha Anda</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto pt-8">
             {[
               {
                 name: "Starter",
@@ -486,13 +491,13 @@ export default function ChefitaLanding() {
 
           <div className="text-center mt-16 space-y-6">
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              {/* <Button
+              <Button
                 variant="outline"
                 size="lg"
                 className="group bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white hover:text-gray-900 px-10 py-6 rounded-2xl text-lg font-bold transition-all duration-500 transform hover:scale-110"
               >
                 📦 Lihat Detail Paket
-              </Button> */}
+              </Button>
               <Button
                 size="lg"
                 className="group bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-10 py-6 rounded-2xl text-lg font-bold shadow-2xl transition-all duration-500 transform hover:scale-110"
@@ -505,7 +510,7 @@ export default function ChefitaLanding() {
       </section>
 
       {/* FAQ Section */}
-      <section className="relative py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-slate-100">
+      <section id="faq" className="relative py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-slate-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/90 backdrop-blur-sm rounded-full border border-gray-200/50 shadow-xl mb-8">
@@ -541,7 +546,7 @@ export default function ChefitaLanding() {
                 key={index}
                 className="group bg-white/90 backdrop-blur-xl rounded-3xl shadow-xl border-0 transition-all duration-500 hover:shadow-2xl"
               >
-                <CardContent className="p-4">
+                <CardContent className="p-8">
                   <details className="group/details">
                     <summary className="flex justify-between items-center cursor-pointer text-xl font-bold text-gray-900 hover:text-orange-600 transition-colors duration-300">
                       {faq.q}
@@ -623,6 +628,9 @@ export default function ChefitaLanding() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }
