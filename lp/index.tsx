@@ -44,13 +44,13 @@ export default function ChefitaLanding() {
                 className="group relative bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-10 py-6 rounded-2xl text-lg font-bold shadow-2xl hover:shadow-orange-500/25 transition-all duration-500 transform hover:scale-105 border-0"
               >
                 <span className="relative z-10 flex items-center gap-3">
-                  📲 Coba Gratis via WhatsApp
+                  📲 Coba Gratis
                   <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div>
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-400 rounded-2xl blur opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
               </Button>
 
-              <Button
+              {/* <Button
                 variant="outline"
                 size="lg"
                 className="group relative bg-white/80 backdrop-blur-sm border-2 border-orange-300 text-orange-600 hover:bg-orange-50 px-10 py-6 rounded-2xl text-lg font-bold transition-all duration-500 transform hover:scale-105 shadow-xl hover:shadow-2xl"
@@ -59,7 +59,7 @@ export default function ChefitaLanding() {
                   🎥 Lihat Demo Chefita
                   <div className="w-0 h-0 border-l-4 border-l-orange-500 border-y-2 border-y-transparent group-hover:animate-pulse"></div>
                 </span>
-              </Button>
+              </Button> */}
             </div>
 
             {/* Trust Indicators */}
@@ -486,13 +486,13 @@ export default function ChefitaLanding() {
 
           <div className="text-center mt-16 space-y-6">
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button
+              {/* <Button
                 variant="outline"
                 size="lg"
                 className="group bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white hover:text-gray-900 px-10 py-6 rounded-2xl text-lg font-bold transition-all duration-500 transform hover:scale-110"
               >
                 📦 Lihat Detail Paket
-              </Button>
+              </Button> */}
               <Button
                 size="lg"
                 className="group bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-10 py-6 rounded-2xl text-lg font-bold shadow-2xl transition-all duration-500 transform hover:scale-110"
@@ -541,7 +541,7 @@ export default function ChefitaLanding() {
                 key={index}
                 className="group bg-white/90 backdrop-blur-xl rounded-3xl shadow-xl border-0 transition-all duration-500 hover:shadow-2xl"
               >
-                <CardContent className="p-8">
+                <CardContent className="p-6">
                   <details className="group/details">
                     <summary className="flex justify-between items-center cursor-pointer text-xl font-bold text-gray-900 hover:text-orange-600 transition-colors duration-300">
                       {faq.q}
